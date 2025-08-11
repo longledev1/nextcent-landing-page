@@ -93,7 +93,6 @@ a {
 }
 
 .banner-content_left h1 {
-  width: 100%;
   font-size: 60px;
   font-weight: 700;
   color: var(--netural-color);
@@ -133,13 +132,12 @@ a {
 
 .our_clients {
   margin-top: 30px;
-  padding: 40px 160px;
   gap: 10px;
 }
 
 .our_clients h2 {
   text-align: center;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 600;
   color: var(--netural-d-grey);
 }
@@ -154,7 +152,9 @@ a {
 .clients-logos {
   display: grid;
   grid-template-columns: repeat(7, max-content); /* cột vừa đủ chứa logo */
-  gap: 150px;
+  justify-content: center;
+  padding: 20px 100px;
+  gap: 180px;
   margin-top: 20px;
 }
 
@@ -174,8 +174,8 @@ a {
 
 .community h2 {
   text-align: center;
-  width: 38%;
-  font-size: 40px;
+  width: 25%;
+  font-size: 25px;
   font-weight: 600;
   color: var(--netural-d-grey);
 }
@@ -185,4 +185,94 @@ a {
   font-size: 16px;
   text-align: center;
   color: var(--netural-grey);
+}
+
+.community_badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 20px;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.badge img {
+  width: 50px;
+  height: auto;
+}
+
+.title_badge {
+  width: 150px;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--netural-d-grey);
+}
+
+.text_badge {
+  text-align: center;
+  width: 300px;
+  line-height: 25px;
+  font-size: 16px;
+  color: var(--netural-grey);
+}
+
+/* HERO SECTION */
+
+.hero_section {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.hero_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero_content h2 {
+  width: 420px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  color: var(--netural-d-grey);
+}
+
+.hero_content p {
+  width: 600px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--netural-grey);
+}
+
+.hero_content button {
+  width: fit-content;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 20px;
 }
