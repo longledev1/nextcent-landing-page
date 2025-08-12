@@ -19,35 +19,17 @@
       rel="stylesheet"
     />
   </head>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <body>
     <div class="main">
       <!-- HEADER -->
-      <div class="container">
-        <div class="header">
-          <!-- MENU -->
-          <div class="menu">
-            <!-- MENU LEFT -->
-            <div class="menu-left">
-              <a href="" class="logo">
-                <img src="/images/logo.svg" alt="Logo" />
-              </a>
-              <a href="" class="textLogo">
-                <span>Nextcent</span>
-              </a>
-            </div>
-
-            <!-- MENU RIGHT -->
-            <div class="menu-right">
-              <a href="" class="menu-item">Home</a>
-              <a href="" class="menu-item">Features</a>
-              <a href="" class="menu-item">Community</a>
-              <a href="" class="menu-item">Blog</a>
-              <a href="" class="menu-item">Pricing</a>
-              <a href="" class="menu-item">Register Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="header"></div>
+      <script>
+        $(".header").load("./templates/header.html");
+      </script>
 
       <!-- BANNER -->
       <div class="banner">
@@ -266,6 +248,62 @@
                   <img src="images/client5.svg" alt="" />
                   <img src="images/client6.svg" alt="" />
                   <button>Meet all customers -></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEWS -->
+        <div class="news">
+          <div class="container">
+            <div class="news-content">
+              <div class="news-text">
+                <h2>Caring is the new marketing</h2>
+                <p>
+                  The Nextcent blog is the best place to read about the latest
+                  membership insights, trends and more. See who's joining the
+                  community, read about how our community are increasing their
+                  membership income and lot's more.​
+                </p>
+              </div>
+              <div class="news-grid">
+                <div class="news-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1752223869508-c0e344a6859d?q=80&w=1119&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="News Image 1"
+                  />
+                  <div class="news-item-content">
+                    <h3>
+                      Creating Streamlined Safeguarding Processes with OneRen
+                    </h3>
+                    <p>Readmore -></p>
+                  </div>
+                </div>
+                <div class="news-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="News Image 2"
+                  />
+                  <div class="news-item-content">
+                    <h3>
+                      What are your safeguarding responsibilities and how can
+                      you manage them?
+                    </h3>
+                    <p>Readmore -></p>
+                  </div>
+                </div>
+                <div class="news-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1556742111-a301076d9d18?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="News Image 3"
+                  />
+                  <div class="news-item-content">
+                    <h3>
+                      Revamping the Membership Model with Triathlon Australia
+                    </h3>
+                    <p>Readmore -></p>
+                  </div>
                 </div>
               </div>
             </div>

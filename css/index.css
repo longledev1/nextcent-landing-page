@@ -22,8 +22,6 @@ a {
   --banner-color: #f5f7fa;
 }
 
-/* body */
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -255,8 +253,8 @@ a {
 }
 
 .case-study-text h2 {
-  font-size: 30px;
-  width: 500px;
+  font-size: 25px;
+  width: 440px;
   line-height: 40px;
   font-weight: 600;
   color: var(--netural-d-grey);
@@ -371,8 +369,8 @@ a {
 }
 
 .testimonial-text h2 {
-  font-size: 30px;
-  width: 500px;
+  font-size: 25px;
+  width: 440px;
   line-height: 40px;
   font-weight: 600;
   color: var(--netural-d-grey);
@@ -487,4 +485,91 @@ a {
   text-decoration: underline;
   transition: 0.3s ease;
   cursor: pointer;
+}
+
+/* NEWS */
+
+.news {
+  margin-top: 40px;
+}
+
+.news-text > h2 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.news-text > p {
+  text-align: center;
+  line-height: 25px;
+  margin: 0 auto;
+  width: 650px;
+  font-size: 16px;
+  color: var(--netural-grey);
+  margin-top: 10px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.news-item {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+  width: 100%;
+  height: 250px;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.news-item-content {
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--banner-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-item-content h3 {
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px;
+  color: var(--netural-d-grey);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.news-item-content p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.news-item-content p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
