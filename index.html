@@ -7,6 +7,7 @@
 
     <!-- LINK CSS -->
     <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
 
     <!-- ICON WEBSITE -->
     <link rel="icon" type="image/png" href="/images/logo.svg" sizes="32x32" />
@@ -30,12 +31,47 @@
   </head>
 
   <body>
-    <div class="main">
+    <div id="main">
       <!-- HEADER -->
-      <header class="header"></header>
-      <script>
-        $(".header").load("./templates/header.html");
-      </script>
+      <header class="header">
+        <div class="container">
+          <!-- MENU -->
+          <div class="menu">
+            <!-- MENU LEFT -->
+            <div class="menu-left">
+              <a href="" class="logo">
+                <img src="/images/logo.svg" alt="Logo" />
+              </a>
+              <a href="" class="textLogo">
+                <span>Nextcent</span>
+              </a>
+            </div>
+
+            <!-- MENU RIGHT -->
+            <div class="menu-right">
+              <a href="" class="menu-item">Home</a>
+              <a href="" class="menu-item">Features</a>
+              <a href="" class="menu-item">Community</a>
+              <a href="" class="menu-item">Blog</a>
+              <a href="" class="menu-item">Pricing</a>
+              <a href="" class="menu-item">Register Now</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="mobile-menu-btn">
+              <svg
+                class="menu-btn"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+              >
+                <path
+                  d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </header>
 
       <!-- BANNER -->
       <section class="banner">
@@ -388,9 +424,79 @@
                 </svg>
               </div>
             </div>
+
+            <!-- Footer Column 2 -->
+            <div class="footer_column">
+              <h3 class="footer-heading">Company</h3>
+              <ul class="footer_list">
+                <li>
+                  <a href="#" class="footer-link">About us</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Blog</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Contact us</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Pricing</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Footer Column 3 -->
+            <div class="footer_column">
+              <h3 class="footer-heading">Support</h3>
+              <ul class="footer_list">
+                <li>
+                  <a href="#" class="footer-link">Help center</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Terms of service</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Legal</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Privacy policy</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Status</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Footer Column 4 -->
+            <div class="footer_column">
+              <h3 class="footer-heading">Stay up to date</h3>
+              <div class="footer_input">
+                <input type="text" placeholder="Your email address" />
+                <svg
+                  class="input-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                >
+                  <path
+                    d="M568.4 37.7C578.2 34.2 589 36.7 596.4 44C603.8 51.3 606.2 62.2 602.7 72L424.7 568.9C419.7 582.8 406.6 592 391.9 592C377.7 592 364.9 583.4 359.6 570.3L295.4 412.3C290.9 401.3 292.9 388.7 300.6 379.7L395.1 267.3C400.2 261.2 399.8 252.3 394.2 246.7C388.6 241.1 379.6 240.7 373.6 245.8L261.2 340.1C252.1 347.7 239.6 349.7 228.6 345.3L70.1 280.8C57 275.5 48.4 262.7 48.4 248.5C48.4 233.8 57.6 220.7 71.5 215.7L568.4 37.7z"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
     </div>
   </body>
+
+  <script>
+    const iconMenu = document.querySelector(".menu-btn");
+    const menuRight = document.querySelector(".menu-right");
+    iconMenu.addEventListener("click", () => {
+      iconMenu.classList.toggle("active");
+      menuRight.classList.toggle("active");
+    });
+  </script>
 </html>
