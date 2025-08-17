@@ -465,7 +465,8 @@ a {
 }
 
 .blog-author span {
-  color: var(--netural-grey);
+  color: var(--netural-color);
+  font-weight: 600;
   font-size: 14px;
 }
 
@@ -671,6 +672,23 @@ footer {
 .footer_column {
   display: flex;
   flex-direction: column;
+}
+
+#footer_column1 {
+  grid-area: col1;
+}
+#footer_column2 {
+  grid-area: col2;
+}
+#footer_column3 {
+  grid-area: col3;
+}
+#footer_column4 {
+  grid-area: col4;
+}
+
+.footer_row {
+  grid-template-areas: "col1 col2 col3 col4";
 }
 
 .footer-heading {

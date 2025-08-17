@@ -6,8 +6,8 @@
     <title>Nextcent</title>
 
     <!-- LINK CSS -->
-    <link rel="stylesheet" href="/css/index.css" />
-    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
     <!-- ICON WEBSITE -->
     <link rel="icon" type="image/png" href="/images/logo.svg" sizes="32x32" />
@@ -32,12 +32,12 @@
 
   <body>
     <div id="main">
-      <!-- HEADER -->
+      <!-- Header -->
       <header class="header">
         <div class="container">
-          <!-- MENU -->
+          <!-- Menu -->
           <div class="menu">
-            <!-- MENU LEFT -->
+            <!-- Menu Left -->
             <div class="menu-left">
               <a href="" class="logo">
                 <img src="/images/logo.svg" alt="Logo" />
@@ -47,7 +47,7 @@
               </a>
             </div>
 
-            <!-- MENU RIGHT -->
+            <!-- Menu Right -->
             <div class="menu-right">
               <a href="" class="menu-item">Home</a>
               <a href="" class="menu-item">Features</a>
@@ -73,7 +73,7 @@
         </div>
       </header>
 
-      <!-- BANNER -->
+      <!-- Banner -->
       <section class="banner">
         <div class="container">
           <div class="banner-content">
@@ -83,7 +83,7 @@
                 Where to grow your business a photographer: site or social
                 media?
               </p>
-              <button>Register</button>
+              <button id="button-register">Register</button>
             </div>
             <div class="banner-content_right">
               <img
@@ -96,9 +96,9 @@
         </div>
       </section>
 
-      <!-- CONTENT -->
+      <!-- Main Content -->
       <main class="main-content">
-        <!-- OUR CLIENTS -->
+        <!-- Our clients -->
         <div class="our_clients">
           <div class="container">
             <h2>Our Clients</h2>
@@ -115,13 +115,15 @@
           </div>
         </div>
 
-        <!-- COMMUNITY -->
+        <!-- Community -->
         <div class="community">
           <div class="container">
             <h2>Manage your entire community in a single system</h2>
             <p>Who is Nextcent suitable for?</p>
-            <!-- COMMUNITY BADGE -->
+
+            <!-- Community badges -->
             <div class="community_badges">
+              <!-- Badge items -->
               <div class="badge">
                 <img src="/images/badge1.svg" alt="badge 1" />
                 <h3 class="title_badge">Membership Organisations</h3>
@@ -150,7 +152,7 @@
           </div>
         </div>
 
-        <!-- CASE STUDY -->
+        <!-- Case Study -->
         <div class="case-study">
           <div class="container">
             <div class="case-study-content">
@@ -177,7 +179,7 @@
           </div>
         </div>
 
-        <!-- STATS -->
+        <!-- Stats -->
         <div class="stats">
           <div class="container">
             <div class="stats-content">
@@ -186,6 +188,7 @@
                 <p>We reached here with our hard work and dedication</p>
               </div>
               <div class="stats-grid">
+                <!-- Stat items -->
                 <div class="stats-item">
                   <div class="stats-item-icon">
                     <img src="/images/stats1.svg" alt="Stats Icon 1" />
@@ -227,7 +230,7 @@
           </div>
         </div>
 
-        <!-- TESTIMONIAL  -->
+        <!-- Testimoinals  -->
         <div class="testimonial">
           <div class="container">
             <div class="testimonial-content">
@@ -356,7 +359,7 @@
           </div>
         </div>
 
-        <!-- CONTACT -->
+        <!-- Contact -->
         <div class="contact">
           <div class="container">
             <h2 class="contact_text">
@@ -367,12 +370,12 @@
         </div>
       </main>
 
-      <!-- FOOTER -->
+      <!-- Footer -->
       <footer class="footer" id="footer">
         <div class="container">
           <div class="footer_row">
             <!-- Footer Column 1 -->
-            <div class="footer_column">
+            <div id="footer_column1" class="footer_column">
               <a href="#" class="footer_link">
                 <img src="/images/logotext.svg" alt="logo" />
               </a>
@@ -426,7 +429,7 @@
             </div>
 
             <!-- Footer Column 2 -->
-            <div class="footer_column">
+            <div id="footer_column2" class="footer_column">
               <h3 class="footer-heading">Company</h3>
               <ul class="footer_list">
                 <li>
@@ -448,7 +451,7 @@
             </div>
 
             <!-- Footer Column 3 -->
-            <div class="footer_column">
+            <div id="footer_column3" class="footer_column">
               <h3 class="footer-heading">Support</h3>
               <ul class="footer_list">
                 <li>
@@ -470,7 +473,7 @@
             </div>
 
             <!-- Footer Column 4 -->
-            <div class="footer_column">
+            <div id="footer_column4" class="footer_column">
               <h3 class="footer-heading">Stay up to date</h3>
               <div class="footer_input">
                 <input type="text" placeholder="Your email address" />
@@ -492,6 +495,7 @@
   </body>
 
   <script>
+    //  Script menu responsive
     const iconMenu = document.querySelector(".menu-btn");
     const menuRight = document.querySelector(".menu-right");
     iconMenu.addEventListener("click", () => {
